@@ -1,0 +1,68 @@
+<main class="game">
+    <div class="confetti" id="confetti"></div>
+    <div class="game-content">
+    <h1 data-i18n="rps.title">Rock, Paper, Scissors</h1>
+
+    <section class="mode-bar">
+      <div class="mode-group">
+        <span class="mode-label" data-i18n="rps.match">Match</span>
+        <button class="mode-btn active button" data-mode="3" data-i18n="rps.best3">Best of 3</button>
+        <button class="mode-btn button" data-mode="5" data-i18n="rps.best5">Best of 5</button>
+      </div>
+      <div class="score-tracker">
+        <div class="score-pill"><span data-i18n="rps.scoreYou">You</span> <span id="score-user" class="score">0</span></div>
+        <div class="score-pill"><span data-i18n="rps.scoreCpu">CPU</span> <span id="score-cpu" class="score">0</span></div>
+      </div>
+      <div class="settings-card">
+        <button class="mode-btn button" id="language-toggle" type="button">
+          <img class="lang-flag" src="/assets/icons/united-states.png" alt="English" />
+          <span data-i18n="toggle.lang">English</span>
+        </button>
+        <label class="theme-toggle">
+          <span data-i18n="toggle.theme">Dark mode</span>
+          <span class="switch">
+            <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="slider"></span>
+          </span>
+        </label>
+      </div>
+    </section>
+
+        <section class="scoreboard">
+            <div class="score-card">
+        <h2 data-i18n="rps.computerChoice">Computer Choice</h2>
+                <div class="choice-row">
+                    <span id="computer-emoji" class="choice-emoji">🤖</span>
+                    <span id="computer-choice"></span>
+                </div>
+            </div>
+            <div class="score-card">
+        <h2 data-i18n="rps.yourChoice">Your Choice</h2>
+                <div class="choice-row">
+                    <span id="user-emoji" class="choice-emoji">🧑‍🚀</span>
+                    <span id="user-choice"></span>
+                </div>
+            </div>
+            <div class="score-card">
+        <h2 data-i18n="rps.result">Result</h2>
+                <div class="choice-row">
+                    <span id="result-emoji" class="result-emoji">✨</span>
+                    <span id="result"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="choices">
+      <button id="rock" class="choice-btn" data-i18n="rps.rock">Rock 🪨</button>
+      <button id="paper" class="choice-btn" data-i18n="rps.paper">Paper 📄</button>
+      <button id="scissors" class="choice-btn" data-i18n="rps.scissors">Scissors ✂️</button>
+        </section>
+
+        <section class="extras">
+      <div id="fun-fact" class="fun-fact" data-i18n="rps.funFact">
+        Pick a move to reveal a fun fact.
+      </div>
+      <button id="reset" class="reset-btn button" data-i18n="rps.reset">Reset Match</button>
+    </section>
+  </div>
+</main>
