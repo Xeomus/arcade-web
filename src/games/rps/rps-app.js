@@ -246,7 +246,7 @@ export function initRps(root = document) {
   }
 
   function createConfetti(count = 24) {
-    const colors = ["#ff6b6b", "#4cc9f0", "#ffd166", "#9b5de5", "#06d6a0", "#f77f00"];
+    const colors = ["#ffff00", "#4cc9f0", "#ffd166", "#9b5de5", "#06d6a0", "#f77f00"];
     for (let i = 0; i < count; i += 1) {
       const piece = document.createElement("span");
       const left = Math.random() * 100;
